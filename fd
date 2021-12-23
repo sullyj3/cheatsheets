@@ -1,3 +1,5 @@
-Include hidden files:
-
+# Include hidden files:
 fd -H PATTERN
+
+# Ignore case:
+fd -i PATTERN
