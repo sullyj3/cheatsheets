@@ -1,0 +1,3 @@
+cachix use <url>
+
+substituters are stored in nix.conf.
