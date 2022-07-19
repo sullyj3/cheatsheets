@@ -1,5 +1,8 @@
 # Include hidden files:
 fd -H PATTERN
 
+# Case sensitive
+fd -s PATTERN
+
 # Ignore case:
 fd -i PATTERN
