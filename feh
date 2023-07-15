@@ -1,0 +1,18 @@
+Fullscreen slideshow:
+	long:
+	$	feh --draw-filename --fullscreen --auto-zoom --sort filename --version-sort
+
+	Version sort is numerical sort - ensuring eg 10 comes after 2
+
+	short:
+	$ feh -d -F -Z -S filename --version-sort
+
+	shorter:
+	$ feh -dFZS filename --version-sort
+
+Fit in window of given size:
+	$ feh -., -g 800x600
+
+	or
+
+	$ feh -.,g 800x600
