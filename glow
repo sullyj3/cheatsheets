@@ -1,0 +1,2 @@
+pager:
+	glow -p file.md
