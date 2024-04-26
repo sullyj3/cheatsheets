@@ -1,0 +1,19 @@
+# To convert bin/string to hex:
+echo '42 is the solution' | xxd -p
+# output: 34322069732074686520736f6c7574696f6e0a
+
+# To convert hex to bin/string:
+echo '34322069732074686520736f6c7574696f6e0a' | xxd -r -p
+# output: 42 is the solution
+
+# change byte grouping
+xxd -g3 -c15 img_bin.ppm
+# -3 sets the number of bytes per group
+# -c15 sets the number of columns per line. We need to set it to a multiple 
+# of the group size to ensure the groups stay aligned.
+
+# skip the first n bytes
+xxd -s +1000 img_bin.ppm
+
+# color always
+xxd -R always <..>
