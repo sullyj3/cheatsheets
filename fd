@@ -1,8 +1,14 @@
 # Include hidden files:
-fd -H PATTERN
+  fd -H PATTERN
 
 # Case sensitive
-fd -s PATTERN
+  fd -s PATTERN
 
 # Ignore case:
-fd -i PATTERN
+  fd -i PATTERN
+
+# find executables
+  fd -t x
+
+# find files with a given extension:
+  fd -e txt
