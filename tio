@@ -1,0 +1,5 @@
+quit: 
+	ctrl-t q
+
+list devices: 
+	tio -l
